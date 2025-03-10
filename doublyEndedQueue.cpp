@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 
-class Dequeue{
+class Deque{
     int *arr;
     int front;
     int rear;
     int size;
 
     public:
-    Dequeue(int n){
+    Deque(int n){
         size = n;
         arr = new int[n];
         front = rear = -1;
@@ -105,7 +105,7 @@ class Dequeue{
 };
 
 int main(){
-    Dequeue q(10);
+    Deque q(10);
     q.pushRear(12);
     q.pushRear(24);
     q.pushRear(36);
